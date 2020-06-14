@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/arama_butonu_cerceve">
+
+    <RelativeLayout
+        android:id="@+id/siparisEdilenUrun"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/indirimLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/cerceve_sari">
+
+            <TextView
+                android:id="@+id/tvIndirimOrani"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="%00"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_8sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvIndirimOrani"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:padding="@dimen/_3sdp"
+                android:text="@string/indirim"
+                android:textColor="@color/colorGriKoyu"
+                android:textSize="@dimen/_8sdp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:background="@drawable/buton_layout_secici"
+            android:id="@+id/imAlisVerisListesi"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_baseline_playlist_add_24" />
+
+        <ImageView
+            android:id="@+id/imUrunFoto"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/boron" />
+
+        <TextView
+            android:id="@+id/tvUrunAdi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/imUrunFoto"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="Boron Renkli Çamaşır Deterjanı"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/tvBirimFiyat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUrunAdi"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="(12.00 TL / Adet)"
+            android:textColor="@color/colorGriKoyu"
+            android:textSize="@dimen/_6sdp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/layoutFiyat"
+            android:layout_below="@+id/tvBirimFiyat"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:background="@drawable/buton_gri_secici"
+                android:id="@+id/tvFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text=".00 TL"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_marginRight="@dimen/_3sdp"
+                android:background="@drawable/buton_mavi_secici"
+                android:id="@+id/tvTalepFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text="12.00 TL"
+                android:textColor="@color/colorBeyaz"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:background="@drawable/buton_mavi_secici"
+                android:id="@+id/tvTalepToplamFiyat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:paddingTop="@dimen/_3sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text="12.00 TL"
+                android:textColor="@color/colorBeyaz"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutFiyat"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/colorGriKoyu"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/imUrunSayisiAzalt"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/buton_gri_secici_azaltma"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_baseline_remove_24" />
+
+                    <TextView
+                        android:id="@+id/tvTalepMiktar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_toLeftOf="@+id/imUrunSayisiArttir"
+                        android:layout_toRightOf="@+id/imUrunSayisiAzalt"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/colorBeyaz"
+                        android:textSize="@dimen/_9sdp" />
+
+                    <ImageView
+                        android:id="@+id/imUrunSayisiArttir"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/buton_gri_secici_arttirma"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/ic_add" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewSepeteEkle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="5dp">
+
+
+                <TextView
+                    android:id="@+id/tvSepeteEkle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/buton_yesil_secici"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/sepete_ekle"
+                    android:textColor="@color/colorBeyaz"
+                    android:textSize="@dimen/_9sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

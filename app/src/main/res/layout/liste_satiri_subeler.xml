@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@color/arkaPlan"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/tvSubeAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:text="tvSubeAd"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <TextView
+            android:id="@+id/tvAdresi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/_12sdp"
+            android:paddingTop="@dimen/_4sdp"
+            android:text="tvAdresi"
+            android:textColor="@color/adresYaziAltBaslik"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <LinearLayout
+            android:id="@+id/tvSubeAra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/arama_butonu_cerceve"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12sdp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center|left"
+                android:text="Telefon"
+                android:textColor="@color/adresYaziAltBaslik"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvTelefon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center|right"
+                android:text="tvTelefon"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tvSubeMailAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arama_butonu_cerceve"
+            android:orientation="horizontal"
+            android:padding="@dimen/_12sdp">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center|left"
+                android:text="E-Mail"
+                android:textColor="@color/adresYaziAltBaslik"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/tvEposta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center|right"
+                android:text="tvEposta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

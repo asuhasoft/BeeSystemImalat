@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#081769</color>
+    <color name="arkaPlan">#f5f6fb</color>
+    <color name="palceHolder">#d4d9de</color>
+    <color name="sari">#fffc00</color>
+    <color name="border">#e4e8eb</color>
+    <color name="urunBasligi">#4c516f</color>
+    <color name="urunBirimFiyatRengi">#848bb4</color>
+    <color name="adresYazi">#4d536e</color>
+    <color name="adresYaziAltBaslik">#858cb1</color>
+    <color name="bilgilendrimeMetinleriYazi">#7f88b0</color>
+
+    <color name="acikGri">#e4e8eb</color>
+    <color name="colorGri">#e4e8eb</color>
+
+    <color name="yesil_koyu">#64af15</color>
+    <color name="yesil">#6dd400</color>
+    <color name="yesil_basilmis">#64af15</color>
+
+    <color name="kirmizi_eski">#eb3323</color>
+    <color name="kirmizi">#ff2500</color>
+    <color name="kirmizi_basilmis">#F3847B</color>
+
+    <color name="mavi">#1030b6</color>
+    <color name="mavi_basilmis">#82bffa</color>
+
+    <color name="colorGriKoyu">#696969</color>
+    <color name="colorBeyaz">#ffffff</color>
+    <color name="colorSiyah">#000000</color>
+
+    <color name="colorPrimaryDark">#000C60</color>
+    <color name="colorPrimaryLight">#0f2abd</color>
+
+    <color name="siyah">#000000</color>
+    <color name="turuncu">#ff7f00</color>
+    <color name="turuncuBasilmis">#FFA54C</color>
+
+    <color name="bottomAppBarColor">#081769</color>
+    <color name="fabColor">#E35058</color>
+    <color name="selectedAppBarIcon">#6BAEC5</color>
+    <color name="unselectedAppBarIcon">#FFFFFF</color>
+</resources>

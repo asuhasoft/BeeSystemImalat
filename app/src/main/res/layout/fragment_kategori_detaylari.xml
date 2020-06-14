@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    android:id="@+id/layoutKategoriDetaylariFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:background="@drawable/buton_layout_secici"
+            android:id="@+id/aramaSayfasiniAc"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_search_24"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tvKategoriDetaylariBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="@string/kategori_detaylar"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <RelativeLayout
+            android:visibility="visible"
+            android:background="@drawable/buton_gri_secici"
+            android:id="@+id/sirala"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_65sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_height="@dimen/_20sdp">
+
+            <ImageView
+
+                android:id="@+id/im1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:padding="@dimen/_4sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_sort_24"
+                android:visibility="visible" />
+
+
+            <TextView
+
+                android:layout_toRightOf="@+id/im1"
+                android:text="Sırala"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/colorGriKoyu"
+                android:gravity="center"
+                android:textSize="@dimen/_8sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/frame"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleViewGenelKategoriler"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:background="#192995"
+                android:layout_height="@dimen/_40sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGri" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_4sdp"
+                android:background="@color/colorBeyaz"
+                android:id="@+id/recycleViewIlkKategori" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGri" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:background="@color/colorBeyaz"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_4sdp"
+                android:id="@+id/recycleViewIkinciKategori" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGri" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:id="@+id/recycleViewUrunler" />
+
+
+                <LinearLayout
+                    android:id="@+id/urunBulunamadiLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/logo_firma" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:text="Aradığınız kategoride\nürün bulunamadı" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_gravity="bottom|center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:visibility="invisible"
+                    android:background="@drawable/buton_ara_seffaf"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_baseline_search_24_beyaz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorBeyaz"
+                        android:gravity="center"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:textSize="@dimen/_14sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="Ara" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

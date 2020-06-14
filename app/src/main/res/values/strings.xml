@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">BeeSystem İmalat</string>
+
+    <string name="line"> <strike> crossed </strike> </string>
+
+    <string name="siparis_ver">Sipariş Ver</string>
+    <string name="bilgilerim">Bilgilerim</string>
+    <string name="hakkinda">Hakkımızda</string>
+    <string name="menuler">Menüler</string>
+    <string name="urun_detaylari">Ürün Detayları</string>
+    <string name="acilis_baslik_ust">Döner - Pizza</string>
+    <string name="acilis_sayfasi_alt">by Mika</string>
+
+    <string name="standart_malzemeler">Standart Malzemeler</string>
+    <string name="cikartmak_istenilen_malzeme">Lütfen istemediğiniz malzemeyi seçiniz</string>
+    <string name="salatalar">Salatalar</string>
+    <string name="eklemek_istedigin">Lütfen ekstrra seçiniz</string>
+    <string name="adres_ekle">Yeni Adres Ekle</string>
+    <string name="soslar">Soslar</string>
+    <string name="kaydet">Kaydet</string>
+    <string name="ekstralar">Ekstralar</string>
+    <string name="menu_icerigi">Menü İçeriği</string>
+    <string name="menu_icerigi_secim_info">Menü içeriğinde bulunan ürünleri tek tek seçip düzenleme yapabilirsiniz</string>
+    <string name="sepete_ekle">Listeme Ekle</string>
+    <string name="menu_onayla">Menü Onayla</string>
+    <string name="para_birimi"> € </string>
+    <string name="teslimat_adresim">Teslimat Adresim</string>
+
+    <string name="toplam">Toplam :</string>
+    <string name="sepet_secim_yap">Seçiminizi Yapınız</string>
+    <string name="sil">Sil</string>
+    <string name="ayrintilara_git">Ayrıntılara git</string>
+    <string name="duzenle">Düzenle</string>
+    <string name="iptal">İptal</string>
+    <string name="degistir">Değiştir</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="uye_girisi">Üye Girişi</string>
+    val intent = Intent(Intent.ACTION_DIAL)
+    intent.data = Uri.parse("tel:+4933714031056")
+    startActivity(intent)
+    <string name="telefon_numarasi"></string>
+
+    <string name="sifremi_unuttum">Şifremi Unuttum</string>
+    <string name="giris">Giriş</string>
+    <string name="kayit_ol">Üye Ol</string>
+    <string name="gecmis_siparislerim">Geçmiş Siparişlerim</string>
+    <string name="title_activity_ana_sayfa">MainActivity</string>
+    <string name="ana_sayfa">Ana Sayfa</string>
+    <string name="profil">Profil</string>
+    <string name="sepetim">Listem</string>
+    <string name="siparislerim">Siparişlerim</string>
+    <string name="urunler">Ürünler</string>
+
+    <string name="ad">Ad*</string>
+    <string name="dogum_tarihi">Doğum Tarihi</string>
+    <string name="sehir">Şehir</string>
+    <string name="sokak">Sokak*</string>
+    <string name="posta_kodu">Posta Kodu*</string>
+    <string name="mail_adresi">Mail Adresi*</string>
+    <string name="cep_telefonu">Cep Telefonu*</string>
+    <string name="sifre2">Şifre</string>
+    <string name="sifre">Şifre*</string>
+    <string name="sifre_tekrar">Şifre Tekrar*</string>
+    <string name="soy_ad">Soy Ad</string>
+    <string name="kasaba">Kasaba*</string>
+    <string name="firma_smi">Firma İsmi</string>
+    <string name="kadin">Kadın</string>
+    <string name="onay_durumu">Onay Durumu:</string>
+    <string name="varsayilan">Varsayılan:</string>
+    <string name="minumum_siparis">Minumum Sipariş: </string>
+    <string name="varsayilan_yap">Varsayilan Yap</string>
+    <string name="uyari">Uyarı</string>
+    <string name="evet">Evet</string>
+    <string name="hayir">Hayir</string>
+    <string name="oturumu_kapat">Oturumu kapatmak istiyor musunuz?</string>
+    <string name="adreslerim">Adreslerim</string>
+    <string name="adres_duzenle">Adres Düzenle</string>
+    <string name="guncelle">Güncelle</string>
+    <string name="adres_basligi">Adres Başlığı</string>
+    <string name="teslimat_adresi_bilgilendirme">Varsayılan olarak seçilen adres otomatik olarak teslimat adresi olarak seçilir</string>
+    <string name="diger">Diğer</string>
+    <string name="paylas">Paylaş</string>
+    <string name="firma_adi">Firma Adi</string>
+    <string name="sorumlu_kisiler">Sorumlu Kişiler</string>
+    <string name="adres">Adres</string>
+
+    <string name="telefon">344 235 11 86</string>
+
+
+    <string name="fax">Fax</string>
+    <string name="mail">Mail</string>
+    <string name="vergi_no">Vergi No</string>
+    <string name="ba_l_oldu_u_sorumlu_mahkeme">Bağlı Olduğu Sorumlu Mahkeme</string>
+
+    <string name="firma_bilgileri">Firma Bilgileri</string>
+    <string name="iletisim_aciklama">Bize telefon veya mail yoluyla 7/24 ulaşabilirsiniz</string>
+    <string name="maill">Mail*</string>
+    <string name="notlar">Notlar</string>
+    <string name="mesajiniz">Mesajınız*</string>
+    <string name="g_nder">Gönder</string>
+    <string name="sipari_ayr_nt_lar">Sipariş Ayrıntıları</string>
+    <string name="kullan">Kullan</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+    <string name="default_notification_channel_name">Haberler</string>
+    <string name="web_sitesi">Web Sitesi</string>
+    <string name="toplam_tutar">Toplam Tutar</string>
+    <string name="k_nye_firma_bilgileri">Künye (Firma Bilgileri)</string>
+    <string name="kvk">KVK</string>
+    <string name="puan_ver">Puan Ver</string>
+    <string name="tavsiye_et">Uygulamayı Tavsiye Et</string>
+    <string name="tamam">Tamam</string>
+    <string name="internet_baglantisi_yok">İnternet Bağlantısı Yok</string>
+
+    <string name="adres_onaylanmadi">Adres henüz onaylanmadığı için bu adres varsayılan yapılamaz</string>
+    <string name="ad_bos_olamaz">Ad boş olamaz</string>
+    <string name="telefon_bos_olmaz">Telefon boş olamaz</string>
+    <string name="mesaj_bos_olamaz">Mesaj boş olamaz</string>
+    <string name="hatali_cep">Hatalı cep telefonu numarası</string>
+    <string name="sifre_en_az">Şifre en az 6 haneli olmalıdır</string>
+    <string name="soyad_bos">Soyad boş olamaz</string>
+    <string name="dogum_tarihi_sec">Doğum tarihi seçiniz</string>
+    <string name="sehir_bos">Şehir boş olamaz</string>
+    <string name="ilce_bos">İlçe boş olamaz</string>
+    <string name="kapi_no_bos">Kapı No boş olamaz</string>
+    <string name="sokak_bos">Sokak boş olamaz</string>
+    <string name="posta_kodu_bos">Posta kodu boş olamaz</string>
+    <string name="mail_adresi_bos">Mail adresi formatı uygun değil</string>
+    <string name="mail_adresi_gecersiz">Mail adresi geçersiz</string>
+    <string name="cep_tel_bos">Cep Telefonu boş olamaz</string>
+    <string name="sifreler_uyumsuz">Şifreler birbiri ile uyumsuz</string>
+    <string name="cinsiyet_sec">Cinsiyet Seçiniz</string>
+    <string name="sepette_urun_yok">Sepette ürün bulunmamaktadır</string>
+    <string name="adres_secimi_yap">Öncelikle adres seçimi yapmalısınız</string>
+    <string name="yanlis_bir_urun_secildi">Yanlış bir ürün seçildi</string>
+    <string name="menu_sepete_eklendi">Menü Sepete Eklendi</string>
+    <string name="sepete_eklendi">Sepete Eklendi</string>
+    <string name="dil">Dil</string>
+    <string name="calisma_saat">Çalışma Saatleri</string>
+    <string name="alerjenler">Alerjenler</string>
+    <string name="katk_maddesi">Katkı Maddesi</string>
+    <string name="favorilerime_ekle">Favorilerime Ekle</string>
+    <string name="sifre_degistir">Şifre Değiştir</string>
+    <string name="eski_ifre">Eski Şifre</string>
+    <string name="yeni_ifre">Yeni Şifre</string>
+    <string name="yeni_ifre_tekrar">Yeni Şifre Tekrar</string>
+    <string name="l_tfen_sosunuzu_seciniz">Lütfen sosunuzu seçiniz</string>
+    <string name="onayla">Onayla</string>
+    <string name="alternatif_r_n_se_ebilirsiniz">Alternatif Ürün Seçebilirsiniz</string>
+    <string name="r_n_kodu">Ürün Kodu:</string>
+    <string name="lider_toptan_market">BeeSystem İmalat</string>
+    <string name="kullan_c_s_zle_mesi"><u>Kullanıcı Sözleşmesi</u></string>
+    <string name="kvkk_metni"><u>KVKK Metni</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="showing_code_in_fragment">Showing code in fragment</string>
+    <string name="scan_qr_code">Barkod Okut</string>
+    <string name="name">Name</string>
+    <string name="empty">---</string>
+    <string name="site_name">Site Name</string>
+    <string name="scan_a_code">Barkod Okut</string>
+    <string name="result_not_found">Result Not Found</string>
+    <string name="show_scanner_from_fragment">Show Scanner From Fragment</string>
+    <string name="title_activity_barkod">BarkodActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="subelerimiz">Şubelerimiz</string>
+    <string name="onay_bekleyen_r_nler">Onay Bekleyen Ürünler</string>
+    <string name="do_rulama_kodunu_giriniz">Doğrulama kodunu giriniz</string>
+    <string name="do_rula">Doğrula</string>
+    <string name="indirim">indirim</string>
+    <string name="arama_ge_mi_i">Arama Geçmişi</string>
+    <string name="ge_mi_i_sil">Geçmişi Sil</string>
+    <string name="kategori_detaylar">Kategori Detayları</string>
+    <string name="firma_ad">Firma Adı</string>
+    <string name="vergi_dairesi">Vergi Dairesi</string>
+    <string name="vergi_numaras">Vergi Numarası</string>
+    <string name="adres_ad">Adres Adı</string>
+    <string name="cadde_sokak">Cadde Sokak</string>
+    <string name="site_veya_apartman_ad">Site veya Apartman Adı</string>
+    <string name="bina_no">Bina No</string>
+    <string name="blok">Blok</string>
+    <string name="kat_no">Kat No</string>
+    <string name="daire_no">Daire No</string>
+    <string name="adres_tarifi">Adres Tarifi</string>
+    <string name="alternatif_ki_i">Alternatif Kişi</string>
+    <string name="alternatif_telefon">Alternatif Telefon</string>
+    <string name="adres_ekle_d_zenle">Adres Ekle Düzenle</string>
+    <string name="ad_n_z">Adınız</string>
+    <string name="soyad_n_z">Soyadınız</string>
+    <string name="do_um_tarihi_se_iniz">Doğum Tarihi Seçiniz</string>
+    <string name="kad_n">Kadın</string>
+    <string name="erkek">Erkek</string>
+    <string name="telefonX">Telefon</string>
+    <string name="kullan_c_bilgilerim">Kullanıcı Bilgilerim</string>
+    <string name="hesab_m">Hesabım</string>
+    <string name="sipari_lerim">Siparişlerim</string>
+    <string name="bildirimler">Bildirimler</string>
+    <string name="kullan_c_bilgilendirme_metni">Kullanıcı Bilgilendirme Metni</string>
+    <string name="kategoriler">Kategoriler</string>
+    <string name="r_n_ara">Ürün Ara</string>
+    <string name="sipari_ge_mi_im">Siparişlerim</string>
+    <string name="sipari_etti_iniz_r_n">Sipariş Ettiğiniz Ürün</string>
+    <string name="alternatif_r_n">Alternatif Ürün</string>
+    <string name="bilgilendirme_metinleri">Bilgilendirme Metinleri</string>
+    <string name="leti_im">İletişim</string>
+    <string name="yelik_olu_tur">Üyelik Oluştur</string>
+    <string name="yeni_adres_ekle">Yeni Adres Ekle</string>
+    <string name="t_m_n_listeme_ekle">Tümünü Listeme Ekle</string>
+
+
+</resources>

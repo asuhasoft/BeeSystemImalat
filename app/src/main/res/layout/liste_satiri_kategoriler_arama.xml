@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@color/mavi"
+
+    android:layout_height="@dimen/_40sdp">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_margin="@dimen/_1sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:button="@android:color/transparent"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="match_parent"
+            android:text="asdasd"
+            android:textColor="@color/colorBeyaz"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvUrunSayisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/colorBeyaz"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="12345" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

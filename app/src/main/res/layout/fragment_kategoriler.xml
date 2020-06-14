@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutFragmentKategoriler"
+    android:background="@color/arkaPlan">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+
+            android:id="@+id/telefonlaAra"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:scaleType="fitCenter"
+            android:background="@drawable/buton_layout_secici"
+            android:src="@drawable/logo_firma"
+            android:visibility="invisible" />
+
+
+        <TextView
+            android:id="@+id/tvIcerikBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@id/profil"
+            android:layout_toEndOf="@id/telefonlaAra"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="@string/kategoriler"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:background="@drawable/buton_layout_secici"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_account"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_below="@id/frame"
+        android:layout_margin="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

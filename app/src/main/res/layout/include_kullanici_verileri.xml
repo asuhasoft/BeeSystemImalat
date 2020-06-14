@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvKullaniciIsmi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center|left"
+                android:padding="@dimen/_8sdp"
+                android:text="tvKullaniciIsmi"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/kullaniciBilgilerim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_profile" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/kullan_c_bilgilerim"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/adreslerim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_adress" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/adreslerim"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/alisVerisListem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_fav" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:text="Alışveriş Listem"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/siparisGecmisim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_orders" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:text="@string/sipari_lerim"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/siparisOnayi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_confirm" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:text="Sipariş Onay"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp">
+
+                <LinearLayout
+                    android:id="@+id/bildirimler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buton_layout_secici"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_8sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:src="@drawable/x_ic_icon_notification" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/montserrat_semi_bold"
+                        android:gravity="center|left"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/bildirimler"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_gri" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

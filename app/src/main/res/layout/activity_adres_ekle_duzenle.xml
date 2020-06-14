@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/geri"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:background="@drawable/buton_layout_secici"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_left_arrow_geri"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tvKategoriDetaylariBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="@string/adres_ekle_d_zenle"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:id="@+id/sil"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/cardALt"
+        android:layout_below="@id/frame">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/adresiOtomatikBul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/buton_mavi_cerceve_oval"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_map" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center|left"
+                    android:text="Adresi Otomatik Bul"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp" />
+
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioBireysel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/arama_butonu_cerceve"
+                    android:buttonTint="@color/colorPrimary"
+                    android:checked="true"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Bireysel"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioKurumsal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/arama_butonu_cerceve"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Kurumsal"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:id="@+id/layoutKurumsal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="@string/firma_ad"
+                    app:boxBackgroundColor="@color/colorBeyaz">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etFirmaAdi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+
+
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="@string/vergi_dairesi"
+
+                    app:boxBackgroundColor="@color/colorBeyaz">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etVergiDairesi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+
+
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:hint="@string/vergi_numaras"
+
+                    app:boxBackgroundColor="@color/colorBeyaz">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etVergiNumarasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+
+
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:hint="@string/adres_ad"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAdresAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+
+
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sipinnerIller"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/arama_butonu_cerceve"
+                android:spinnerMode="dropdown" />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sipinnerIlceler"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/arama_butonu_cerceve" />
+
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sipinnerMahalle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/arama_butonu_cerceve" />
+
+            <TextView
+                android:id="@+id/tvServisUcreti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_9sdp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:hint="@string/cadde_sokak"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etCaddeSokak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:imeOptions="actionNext"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:hint="@string/site_veya_apartman_ad"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBinaAdi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/bina_no"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBinaNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLength="20"
+
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/blok"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etBlokAd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLength="20"
+
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/kat_no"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etKatNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/daire_no"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etDaireNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLength="14"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:hint="@string/adres_tarifi"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAdresTarifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:maxLines="8"
+                    android:text=""
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/alternatif_ki_i"
+                    android:orientation="vertical"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAlterantifKisi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:maxLength="30"
+
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:hint="@string/alternatif_telefon"
+                    app:boxBackgroundColor="@color/colorBeyaz"
+                    app:hintTextColor="@color/colorPrimary">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAlternatifTelefonn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textSize="@dimen/_12sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/cardALt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/kaydet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/buton_mavi_acik_secici"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center"
+                android:text="Kaydet"
+                android:textColor="@color/colorBeyaz"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

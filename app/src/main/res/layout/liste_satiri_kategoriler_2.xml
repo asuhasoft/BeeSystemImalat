@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mavi"
+    android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_margin="@dimen/_1sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:button="@android:color/transparent"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_4sdp"
+            android:layout_width="wrap_content"
+            android:text="asdasd"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBeyaz"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imUrun"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_60sdp"
+                android:padding="@dimen/_3sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:src="@drawable/boron" />
+
+            <TextView
+                android:id="@+id/tvKategoriIsmi"
+                android:layout_below="@+id/imUrun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="Meyve - Sebze" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

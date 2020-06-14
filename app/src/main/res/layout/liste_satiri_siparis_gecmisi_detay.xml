@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@drawable/arama_butonu_cerceve"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imDurum"
+            android:visibility="invisible"
+            android:padding="@dimen/_3sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_delete_forever_24" />
+
+
+        <ImageView
+            android:id="@+id/imUrunFoto"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/boron" />
+
+        <TextView
+            android:id="@+id/tvUrunAdi"
+            android:layout_toRightOf="@+id/imUrunFoto"
+            android:layout_toLeftOf="@+id/imDurum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Boron Renkli Çamaşır Deterjanı" />
+
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_below="@+id/tvUrunAdi"
+            android:layout_toRightOf="@+id/imUrunFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTalepFiyat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="12.00 TL" />
+
+            <TextView
+                android:id="@+id/tvTalepMiktar"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorGriKoyu"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="tvTalepMiktar" />
+
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:id="@+id/tvTalepToplamFiyat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorBeyaz"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="24.00 TL" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@color/colorGri"
+            android:layout_below="@+id/layout"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:id="@+id/tvDetayDurum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingRight="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorBeyaz"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="tvDetayDurum" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

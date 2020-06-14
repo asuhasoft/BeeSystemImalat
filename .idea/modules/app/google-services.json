@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "516572880486",
+    "firebase_url": "https://beesystemimalat.firebaseio.com",
+    "project_id": "beesystemimalat",
+    "storage_bucket": "beesystemimalat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516572880486:android:920d0f626d94b3da7c97a7",
+        "android_client_info": {
+          "package_name": "com.imalat.beeSystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516572880486-b211ibs645itbtm44k370tfiufqe4898.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imalat.beeSystem",
+            "certificate_hash": "32e4a75c8f0eb6394e087764150197045366ea0f"
+          }
+        },
+        {
+          "client_id": "516572880486-h4pdhj13ombdno56gfnfntsj3secf1ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuq3ZBmiwrrBF3KlKKRi7UU_QEpIlMZbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516572880486-h4pdhj13ombdno56gfnfntsj3secf1ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

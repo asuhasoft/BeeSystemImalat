@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@drawable/arama_butonu_cerceve"
+    android:layout_margin="@dimen/_4sdp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:padding="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvKategoriIsmi"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_4sdp"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Meyve - Sebze" />
+
+
+        <ImageView
+            android:id="@+id/imUrun"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvKategoriIsmi"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:padding="@dimen/_3sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/boron" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

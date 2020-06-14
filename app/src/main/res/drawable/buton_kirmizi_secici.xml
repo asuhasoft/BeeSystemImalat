@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_5sdp" />
+            <solid android:color="@color/kirmizi" />
+            <stroke android:width="0dp" android:color="@color/kirmizi" />
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape>
+    </item>
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_5sdp" />
+            <solid android:color="@color/kirmizi_basilmis" />
+            <stroke android:width="0dp" android:color="@color/kirmizi_basilmis" />
+            <padding android:bottom="0dp" android:left="0dp" android:right="0dp" android:top="0dp" />
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/geri"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:background="@drawable/buton_layout_secici"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_left_arrow_geri"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tvKategoriDetaylariBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="Üye Ol"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:id="@+id/sil"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/lay2"
+        android:layout_below="@+id/frame"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:boxBackgroundColor="@color/colorBeyaz"
+            app:hintTextColor="@color/colorPrimary"
+            android:hint="@string/telefonX">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etTelefon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="@dimen/_12sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                android:layout_weight="1"
+                android:hint="@string/ad_n_z"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                app:boxBackgroundColor="@color/colorBeyaz"
+                android:layout_weight="1"
+                android:hint="@string/soyad_n_z"
+                app:hintTextColor="@color/colorPrimary">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSoyad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_12sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/dogumTarihiSec"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="#e0e0e0"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doğum Tarihi Seçiniz"
+                android:paddingTop="@dimen/_2sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:textSize="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semi_bold" />
+
+            <TextView
+                android:id="@+id/tvDogumTarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_8sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="doğum tarhidi" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerYil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/buton_layout_secici_sadece_alt" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerAy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buton_layout_secici_sadece_alt"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spinnerGun"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buton_layout_secici_sadece_alt"
+
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:boxBackgroundColor="@color/colorBeyaz"
+            android:hint="@string/do_um_tarihi_se_iniz"
+            app:hintTextColor="@color/colorPrimary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDogumTarihi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:focusable="false"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radiKadin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_light"
+                    android:background="@color/colorBeyaz"
+                    android:text="@string/kad_n"
+                    android:textSize="@dimen/_12sdp" />
+
+                <RadioButton
+                    android:id="@+id/radioErkek"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="@dimen/_45sdp"
+                    android:background="@color/colorBeyaz"
+                    android:buttonTint="@color/colorPrimary"
+                    android:fontFamily="@font/montserrat_light"
+                    android:text="@string/erkek"
+                    android:textSize="@dimen/_12sdp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxPolitika1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:buttonTint="@color/colorPrimary"
+            android:fontFamily="@font/montserrat_medium"
+            android:visibility="gone"
+            android:text="Kullanıcı Sözleşmesi"
+            android:textSize="@dimen/_12sdp" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkboxPolitika2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:buttonTint="@color/colorPrimary"
+            android:visibility="gone"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="KVKK Metni"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/tvUyeOl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/buton_mavi_acik_secici"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:paddingLeft="@dimen/_50sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingRight="@dimen/_50sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/yelik_olu_tur"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/buton_mavi_sadece_cerceve_oval"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_call_center" />
+
+                <TextView
+                    android:id="@+id/tvTelefon"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telefon"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:textColor="@color/kirmizi"
+                    android:fontFamily="@font/montserrat_bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginBottom="@dimen/_40sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Müşteri Hizmetleri"
+                android:gravity="center"
+                android:layout_gravity="top|center"
+                android:textColor="@color/colorBeyaz"
+                android:textSize="@dimen/_10sdp"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:background="@drawable/cerceve_lacivert_dolu"
+                android:fontFamily="@font/montserrat_regular" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

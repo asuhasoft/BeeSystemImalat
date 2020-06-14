@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaPlan"
+    android:id="@+id/layoutSiparisGecmisiDetayFragmnet"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary">
+
+
+        <ImageView
+            android:id="@+id/geri"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:background="@drawable/buton_layout_secici"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_left_arrow_geri"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tvKategoriDetaylariBaslik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:gravity="center"
+            android:text="@string/sipari_ge_mi_im"
+            android:textColor="@color/colorBeyaz"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <ImageView
+            android:id="@+id/sil"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/frame"
+            android:layout_weight="2" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/arama_butonu_cerceve"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+
+                        android:fontFamily="@font/montserrat_medium"
+                        android:gravity="center|left"
+                        android:padding="@dimen/_10sdp"
+                        android:text="Sipariş Toplam"
+                        android:textColor="@color/urunBirimFiyatRengi"
+                        android:textSize="@dimen/_10sdp" />
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:id="@+id/tvUrunAdetX"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
+                            android:text="tvUrunAdetX"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSiparisToplamiX"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center"
+                            android:text="tvsiparisToplamiX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Sipariş No"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSiparisNoX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvSiparisNoX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Sipariş Durumu"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSiparisDurumuX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvSiparisDurumuX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Sipariş Tarihi"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvSiparisTarihiX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvSiparisTarihiX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:id="@+id/tvZilDurumuX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Zil Durumu"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvNotlarX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="Notlar"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Teslimat Aderesi"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvTeslimatAdresimBaslikX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvTeslimatAdresimBaslikX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Tesilimat Zamanı"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvServisZamaniX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvServisZamaniX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Teslimat Tipi"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvTeslimatTipiX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvTeslimatTipiX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/arama_butonu_cerceve"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center|left"
+                            android:text="Ödeme Tipi"
+                            android:textColor="@color/urunBirimFiyatRengi"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <TextView
+                            android:id="@+id/tvOdemeTipiX"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/montserrat_semi_bold"
+                            android:gravity="center|left"
+                            android:text="tvOdemeTipiX"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

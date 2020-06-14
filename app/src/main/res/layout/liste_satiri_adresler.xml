@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/arama_butonu_cerceve"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/buton_layout_secici"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imm1"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/x_ic_icon_adress" />
+
+            <TextView
+                android:id="@+id/tvAdresAdi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_toRightOf="@+id/imm1"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center|left"
+                android:text="tvAdresAdi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/tvDuzenle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toStartOf="@+id/tvAdresSil"
+                android:background="@drawable/adreseler_duzenle_butonu_cerceve"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:gravity="center|left"
+                android:paddingStart="@dimen/_4sdp"
+                android:paddingTop="@dimen/_4sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_4sdp"
+                android:text="Düzenle"
+                android:textColor="@color/urunBirimFiyatRengi"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <ImageView
+                android:id="@+id/tvAdresSil"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/x_ic_delete_small" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tvAdres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_regular"
+            android:gravity="center|left"
+            android:text="tvAdres"
+            android:textColor="@color/adresYazi"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/colorGri" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center|left"
+                    android:text="@string/minumum_siparis"
+                    android:textColor="@color/adresYaziAltBaslik"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvMinumumSiparis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="left"
+                    android:text="minsip"
+                    android:textColor="@color/yesil"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center|left"
+                    android:text="Servis Ücreti"
+                    android:textColor="@color/adresYaziAltBaslik"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvServisUcreti"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center|left"
+                    android:text="Onaysız"
+                    android:textColor="@color/yesil"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center|left"
+                    android:text="Ücretsiz Servis"
+                    android:textColor="@color/adresYaziAltBaslik"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvUcretsizServis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:gravity="center|left"
+                    android:text="Onaysız"
+                    android:textColor="@color/yesil"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/tvVarsayilanYap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buton_layout_secici"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:gravity="center"
+                    android:text="@string/varsayilan_yap"
+                    android:textColor="@color/colorGriKoyu"
+                    android:textSize="@dimen/_10sdp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

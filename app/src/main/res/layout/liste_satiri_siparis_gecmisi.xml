@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_3sdp"
+    android:background="@drawable/arama_butonu_cerceve">
+
+    <RelativeLayout
+        android:background="@drawable/buton_layout_secici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <LinearLayout
+            android:layout_toLeftOf="@+id/siparisDurumuLayout"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSiparisNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/urunBasligi"
+                android:text="12345"
+                android:textSize="@dimen/_10sdp" />
+
+
+            <TextView
+                android:id="@+id/tvSiparisTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textColor="@color/colorPrimary"
+                android:text="12345"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvSiparisTutari"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:fontFamily="@font/montserrat_semi_bold"
+                    android:text="12345"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_10sdp" />
+
+
+                <TextView
+                    android:id="@+id/tvUrunSayisi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="(... Ürün)"
+                    android:textSize="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/siparisDurumuLayout"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/buton_yesil_secici"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSiparisDurumu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="12345"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:textColor="@color/colorBeyaz"
+
+                android:textSize="@dimen/_8sdp" />
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="@color/colorBeyaz"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@drawable/buton_mavi_sadece_cerceve_oval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:button="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentTop="true"
+                android:id="@+id/imUrun"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_60sdp"
+                android:padding="@dimen/_3sdp"
+                android:visibility="gone"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/boron" />
+
+            <TextView
+                android:id="@+id/tvKategoriIsmi"
+                android:layout_below="@+id/imUrun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Meyve - Sebze" />
+
+            <TextView
+                android:id="@+id/tvUrunSayisi"
+                android:layout_below="@+id/tvKategoriIsmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_4sdp"
+                android:textSize="@dimen/_8sdp"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="12345" />
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

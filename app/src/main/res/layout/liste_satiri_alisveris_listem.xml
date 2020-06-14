@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/colorBeyaz"
+    android:elevation="@dimen/_10sdp"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imSil"
+            android:visibility="visible"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/x_ic_delete_small" />
+
+        <ImageView
+            android:id="@+id/imUrunFoto"
+            android:layout_alignParentLeft="true"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp" />
+
+        <TextView
+            android:id="@+id/tvUrunAdi"
+            android:layout_toRightOf="@+id/imUrunFoto"
+            android:layout_toLeftOf="@+id/imSil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/adresYazi"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Boron Renkli Çamaşır Deterjanı" />
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_below="@+id/tvUrunAdi"
+            android:layout_toRightOf="@+id/imUrunFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFiyat"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="12.00 TL" />
+
+            <androidx.cardview.widget.CardView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:cardBackgroundColor="@color/colorBeyaz"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:background="@drawable/buton_layout_urun_arttirma"
+                        android:id="@+id/imUrunSayisiAzalt"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_remove_circle_24" />
+
+                    <TextView
+                        android:layout_toLeftOf="@+id/imUrunSayisiArttir"
+                        android:layout_toRightOf="@+id/imUrunSayisiAzalt"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/tvAdetSepet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:textSize="@dimen/_8sdp"
+                        android:textColor="@color/colorGriKoyu"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="0" />
+
+                    <ImageView
+                        android:background="@drawable/buton_layout_urun_arttirma"
+                        android:id="@+id/imUrunSayisiArttir"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_add_circle_24" />
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:background="@drawable/buton_yesil_secici"
+                android:id="@+id/tvSepeteEkle"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:padding="@dimen/_3sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/colorBeyaz"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:text="@string/sepete_ekle" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

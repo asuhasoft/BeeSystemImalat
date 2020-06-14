@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@color/colorBeyaz"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layoutAciliSayfasi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+
+               android:layout_marginTop="@dimen/_120sdp"
+                android:layout_centerHorizontal="true"
+                android:alpha="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_firma"
+                android:visibility="visible" />
+
+
+            <ImageView
+                android:id="@+id/imm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/logo_be_siparis" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=60:D4:42:BF:2E:AE:E9:67:4D:ED:E7:D3:43:22:04:87:24:7B:A3:97%3Bcom.lider_toptan_market.myapplication
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.lider_toptan_market.myapplication
+
+    SHA-1 certificate fingerprint:
+    60:D4:42:BF:2E:AE:E9:67:4D:ED:E7:D3:43:22:04:87:24:7B:A3:97
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBjZ1ASr1R4fNE8yDAasqYhoqVSM65MYK8</string>
+
+</resources>
